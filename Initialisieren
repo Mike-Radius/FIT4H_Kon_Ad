@@ -1,0 +1,18 @@
+GITHUB.com
+	neues Repository anlegen
+
+	Host:
+		mkdir Ko-A	#Verzeichnis anlegen
+		cd Ko-A			#in Verzeichnis wechseln
+		git init			#Initialisieren einen neuen GIT Repos.
+		touch text.txt 	#Erzeugen einer neuen Datei
+		git add text.txt
+			#Die Datei text.txt wird ins neue Repo. aufgenommen, d.h. unter Versionsverwaltung gestellt.
+			git commit -m 'Initialisierung'
+			#Die neue Datei wird in den Bereich der Dateien geschoben, die mit dem Server synchronisiert werden sollen
+
+			git remote add origin https://Mike-Radius@github.com/Mike-Radius/FIT4H_Kon_Ad.git
+			#Das lokale Repo wird mit einem öffentlichen Repo verbunden; es wird dem bestehenden Github -repository hinzugefügt
+
+git push -u origin master
+	# die Änderung, die auf dem lokalen Repository durchgeführt wurden werden mit dem Stand auf dem Server verglichen und die neuere Version wird auf dem Server kopiert.
