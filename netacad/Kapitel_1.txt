@@ -1,0 +1,37 @@
+Linux means the kernel of the system, which is the central controller of everything that happens on the computer.
+
+Only software that has been certified by the Open Group may call itself UNIX. Despite adopting all the requirements of the UNIX specification, Linux has not been certified, so Linux really isn’t UNIX! It’s just… UNIX-like.
+
+The kernel dictates which program gets which pieces of memory, it starts and kills programs, and it handles displaying text on a monitor.
+
+The kernel also handles switching of applications.
+
+The boot loader’s job is to load the kernel and get it started.
+
+Applications make requests to the kernel and receive resources, such as memory, CPU, and disk, in return.
+
+A process is just one task that is loaded and tracked by the kernel.
+
+The open source philosophy is that you have a right to obtain the software, and to modify it for your own use.
+
+Source code is not understood directly by the computer, so it must be compiled into machine instructions by a compiler. The compiler gathers all of the source files and generates something that can be run on the computer, such as the Linux kernel.
+
+The source was all freely available, so Linux was able to target their tools and provide a complete system. As such, most of the tools that are part of the Linux system come from these GNU tools.
+
+The most important question to ask when determining the configuration of a machine is “what will this machine do?”
+
+If a software release is in a state that it has many new features that have not been rigorously tested, it is typically referred to as beta.
+
+After those features have been tested in the field, the software moves to a stable point.
+
+Apple makes the OS X operating system, which has undergone UNIX certification. OS X is partially based on software from the FreeBSD project.
+
+Some of the more popular commercial UNIXes are:
+
+Oracle Solaris
+IBM AIX
+HP-UX
+
+For example, IBM AIX runs on a wide variety of IBM hardware and can share hardware with mainframes.
+
+Each of these runs on hardware from their respective creators. The hardware is usually large and powerful, offering such features as hot-swap CPU and memory, or integration with legacy mainframe systems also offered by the vendor.
