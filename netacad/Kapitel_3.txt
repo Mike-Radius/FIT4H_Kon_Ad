@@ -1,0 +1,24 @@
+MOTD = Massge of the day/ erscheint beim einloggen, ist für die Benutzer und kommt vom Admin.
+
+w command = shows who is logged in
+
+Sharing the system in multiuser mode also requires that everyone run as unprivileged users, so letting each user run their own web server is very difficult.
+
+The host runs software called the hypervisor that switches control between the various guests just like the Linux kernel does for individual processes.
+
+The basic tools used in most offices are:
+
+	Word processor
+	Spreadsheet
+	Presentation package 
+	Web browser
+
+	A good password is at least 10 characters long and contains a mixture of numbers, letters (both upper and lower case) and special symbols
+
+	KeePassX to generate passwords
+
+	A firewall is a device that filters network traffic, and Linux has one built-in
+
+	gufw is a graphical interface to Ubuntu’s “uncomplicated firewall”.  Iptables, which is the built in firewall system
+
+	

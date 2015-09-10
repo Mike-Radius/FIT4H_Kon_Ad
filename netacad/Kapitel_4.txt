@@ -1,0 +1,40 @@
+ACCESS A TERMINAL
+
+There are two ways to acces a terminal: over the GUI and a virtual Terminal
+
+->You can find the GUI terminal on the desktopbar.
+->The virtual one can also started over the GUI but needs a login
+
+ hotkey for terminal: Ctrl-Alt-F1. Note: On virtual machines, virtual terminals may not be available.
+
+ ------------------------------------------------------------
+PROMPT
+
+[sysadmin@localhost ~]
+
+user = sysadmin
+System's name = localhost
+current directory = ~ -> home(hängt vom Benutzernamen ab) directory
+
+--------------------------------------------------------------
+SHELL
+
+shell = interpreter = converts commands into actions
+Most common linux shell is bash
+
+Scripting: Store commands in a file and execute them by starting the script.
+
+Aliases: type a short command for a long one.
+
+Variables:variables can be used to modify how commands and features work
+--------------------------------------------------------------
+FORMATTING COMMANDS
+
+command [options] [arguments]
+						|					|
+						|		arguments are used to provide additional 
+						|		information (such as a filename or a username)
+						|
+Options are used to modify the core behavior
+
+Each option and argument is normally separated by a space, although options can often be combined together.
