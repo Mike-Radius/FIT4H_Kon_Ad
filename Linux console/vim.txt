@@ -1,0 +1,32 @@
+Bewegen des Cursors
+
+h = < links
+k = ^ oben
+l = > rechts
+j = unten
+-----------------------
+esc = normalmodus
+:wq = speichern und beenden
+:q! = beendet den Editor ohne Änderung
+x		= Zeichen löschen
+i		=	schreibmodus(links vom cursor)
+dw  = Wort löschen(erscheint nich!)
+I   = Zeilenanfang
+A   = Zeilenende
+------------------------
+2w = Bewegung zwei Zeichenketten weiter
+0 = Zum Anfang der Zeile
+-------------------------
+d2w = lösche zwei Zeichenketten
+-------------------------
+dd = komplette Zeile löschen
+------------------------
+p = fügt Puffer nach aktueller Position ein
+u = macht letzten Befehl rückgängig
+------------------------------------
+/daswasgesuchtwird #sucht nach dem /wpa
+n 	= sucht weiter
+N 	= sucht zurück
+gg 	= Dateianfang
+G 	= Dateiende
+100G = springt in Zeile 100
