@@ -38,3 +38,28 @@ command [options] [arguments]
 Options are used to modify the core behavior
 
 Each option and argument is normally separated by a space, although options can often be combined together.
+---------------------------------------------------------------
+WORKING WITH OPTIONS
+
+Single-letter options are preceded by a single dash (-). Full-word options are preceded by two dashes (--)
+---------------------------------------------------------------
+COMMAND HISTORY
+
+history = zeigt die letzten Befehle an
+
+!3 = Executes the third command from the history list
+
+history 5	= Show the last five commands from the history list
+!!	= Execute the last command again
+!-5	= Execute the fifth command from the bottom of the history list
+!ls	= Execute the most recent ls command
+----------------------------------------------------------------
+BASH SHELL VARIABLES
+
+echo = to display a variable
+echo $HISTSIZE = gibt die Menge an Speichereinheiten aus (HISTSIZE ist die Variable)
+----------------------------------------------------------------
+PATH VARIABLES
+
+
+
