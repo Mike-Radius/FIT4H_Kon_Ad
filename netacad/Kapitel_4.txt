@@ -61,5 +61,76 @@ echo $HISTSIZE = gibt die Menge an Speichereinheiten aus (HISTSIZE ist die Varia
 ----------------------------------------------------------------
 PATH VARIABLES
 
+echo $PATH = This variable is used to find the location of commands
+it determine the location of the command
+-----------------------------------------------------------------
+GLOBBING
 
+When glob characters are used, the shell will "expand" the entire pattern to match all files in the specified directory that matches the pattern.(Systemzeichen zum erweiter)
 
+echo * = * matches "zero or more" characters in a file name
+
+echo D* = searches for all files which begins with D
+
+echo ??????? = shows all files with the exact length of the question mark(result=Desktop)
+
+This glob uses a pair of square brackets ( [ ] ) to specify which one character will be allowed. The allowed characters can be specified as a range, a list, or by what is known as a character class.
+
+The allowed characters can also be negated with an exclamation point "!"
+
+echo [DP]* = Desktop Documents Pictures Puplic
+echo [!DP]* = Music Templates Videos
+
+Range symbol -
+echo [D-P]* 
+echo [!D-P]*
+----------------------------------------------------------
+Quoting
+
+Three types of quotes = '' , "" , ``
+
+Single quotes prevent the shell from "interpreting" or expanding all special characters. Often single quotes are used to protect a string from being changed by the shell, so that the string can be interpreted by a command as a parameter to affect the way the command is executed.
+
+Double quotes stop the expansion of glob characters like the asterisk (*), question mark (?), and square brackets ( [ ] ). Double quotes do allow for both variable expansion and command substitution (see back quotes) to take place.
+
+Back quotes cause "command substitution" which allows for a command to be executed within the line of another command.
+
+The shell also provides a way to block the interpretation of just a single character called "escaping" the character. To "escape" the special meaning of a shell metacharacter, the backslash "\" character is used as a prefix to that one character.
+
+echo Today is $(date) = today is Wed Dec 11 22:13:45 UTC 2013
+
+echo This is the command '`date`' = to prevent the date to be executed
+echo This is the command \`date\` = to prevent the date to be executed
+
+Double quote characters don't have any effect on backquote characters
+
+Double quote characters will have an effect on wildcard characters, disabling their special meaning
+
+echo "D*" = D*
+--------------------------------------------------------
+CONTROL STATEMANTS
+
+The Bash shell offers three different statements that can be used to separate multiple commands typed together
+
+The && characters create a logical and statement. Commands separated by && are conditionally executed. If the command on the left of the && is successful, then the command to the right of the && will also be executed. If the command to the left of the && fails, then the command to the right of the && is not executed.
+
+The || characters create a logical or statement, which also causes conditional execution. When commands are separated by ||, then only if the command to the left fails, does the command to the right of the || execute. If the command to the left of the || succeeds, then the command to the right of the || will not execute.
+
+; um Befehele von einander zu trennen
+
+&& logische UND Verknüpfung
+
+|| logische ODER Verknüpfung
+
+true liefert ein wahr zurück
+false liefert ein falsch zurück
+--------------------------------------------------------------
+HISTORY
+
+history = zeigt alle eingegebenen Befehle mit einer Nummer
+
+Other useful keys for editing include the Home, End, Backspace and Delete keys.
+
+history 4 = zeigt die letzten 4 eingegebenen Befehle
+
+!4 = führt den 4. Befehl nochmal aus

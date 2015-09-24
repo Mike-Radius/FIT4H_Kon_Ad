@@ -1,0 +1,77 @@
+GETTING HELP
+
+man date = opens the manual for date (man pages)
+
+If the man command can find the manual page for the argument provided, then that manual page will be displayed using a command called "less"
+
+
+H or h	- Display the help
+Q or q	- Quit the help or manual page
+Spacebar - or f or PageDown	Move a screen forward
+b or PageUp	- Move a screen backward
+Enter or down arrow - Move down one line
+Up arrow -	Move up one line
+/ followed by text - to search	Start searching forward
+? followed by text - to search	Start searching backward
+n	- Move to next text that matches search
+N	- Move to previous matching text
+
+SEARCH
+
+Searches are not case sensitive and do not "wrap" around from the bottom to top, or vice versa
+
+/file = searches for file, after the / you can type the characters
+
+move forward to the next match by pressing "n"
+moving backwards through the matches by pressing "N"
+
+spacebar to move down one screen
+
+type q to exit the man page
+#################################
+
+man -k password = searches all man pages with password in the description
+
+apropos password = same as above
+
+->There could be more man pages than one, in this case you can use 
+man -f passwd
+
+it shows all man pages with the same name. The Numbers are for indicate which one is displayed by default.
+
+
+To display a man page for a different section, provide the section number as the first argument to the man command
+
+man 5 passwd = Displays the man page passwd (5)
+
+whatis passwd = Instead of using "man -f", you can also use the "whatis" no difference to man -f password
+##################################
+info date = displays a info page about the date function (info= lessons, man= dokumentation)
+
+h - to see a list of movement commands
+
+l - to return to viewing the document
+
+s - search
+
+
+*Examples of date:: (Enter to open another page)
+###################################
+date --help
+
+"any_command" --help to view basic command usage
+####################################
+ls /usr/share/doc
+
+displays more detailed help documents
+####################################
+locate crontab = An easy way to search for a file with crontab in its file name
+
+locate -b "\crontab" = searches only for "crontab"
+
+As a result, any files that you created today will not normally be searchable with the locate command. If you have access to the system as the root user (the system administrator account), you can manually update this file by running the "updatedb" command.
+
+Another possible solution to searching for "newer" files is to make use of the find command. This command searches the live filesystem, rather than a static database.
+####################################
+whereis passwd = The "whereis" command only searches for commands and man pages, not just any file.
+####################################
