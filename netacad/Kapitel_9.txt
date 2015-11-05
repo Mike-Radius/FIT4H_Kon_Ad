@@ -1,0 +1,64 @@
+9.3 Shell Scripts in a Nutshell
+
+#!/bin/bash
+echo “Hello, World!”
+
+The two characters, “#!” are traditionally called the hash and the bang respectively, which leads to the shortened form of “shebang” when they’re used at the beginning of a script.
+
+Traditional office tools like LibreOffice that output file formats containing formatting and other information are not appropriate for this task.
+
+
+9.4 Editing Shell Scripts-----------------------------------------------------------------------------------------------
+
+
+Command	Description for NANO
+Ctrl + W	search the document
+Ctrl + W, then Control + R	search and replace
+Ctrl + G	show all the commands possible
+Ctrl + Y/V	page up / down
+Ctrl + C	show the current position in the file and the file’s size
+
+
+9.5 Scripting Basics-----------------------------------------------------------------------------------------------------
+
+1. Variables, which hold temporary information in the script
+2. Conditionals, which let you do different things based on tests you write
+3. Loops, which let you do the same thing over and over
+
+
+9.5.1 Variables----------------------------------------------------------------------------------------------------------
+
+#!/bin/bash
+
+ANIMAL="penguin"
+echo "My favorite animal is a $ANIMAL"
+
+9.5.2 Conditionals-------------------------------------------------------------------------------------------------------
+
+#!/bin/bash
+
+if grep -q root /etc/passwd; then
+  echo root is in the password file
+else
+  echo root is missing from the password file
+fi
+
+Command	Description
+test –f /dev/ttyS0				0 if the file exists
+test ! –f /dev/ttyS0			0 if the file doesn’t exist
+test –d /tmp							0 if the directory exists
+test –x `which ls`				substitute the location of ls then test if the user can execute
+test 1 –eq 1							0 if numeric comparison succeeds
+test ! 1 –eq 1	NOT – 		0 if the comparison fails
+test 1 –ne 1							Easier, test for numeric inequality
+test “a” = “a”						0 if the string comparison succeeds
+test “a” != “a”						0 if the strings are different
+test 1 –eq 1 –o 2 –eq 2		-o is OR: either can be the same
+test 1 –eq 1 –a 2 –eq 2		-a is AND: both must be the same
+
+if test –f /tmp/foo; then
+if [ -f /tmp/foo]; then   #test = []
+
+
+9.5.3 Loops--------------------------------------------------------------------------------------------------------------
+

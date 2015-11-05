@@ -9,7 +9,7 @@ Die Datei ausführbar machen:
 	chmod +x NameDerDatei
 
 Aufruf der Datei
-	./test.sh
+	./test.sh #Kurzform mit ./
 		#Es ist eine absolute Pfadangabe notwendig
 
 Variablen
