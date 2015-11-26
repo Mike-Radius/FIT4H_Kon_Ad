@@ -1,0 +1,25 @@
+arp
+	#wandelt IP in MAC
+	arp 172.16.1.201 zeigt die Mach-Adresse an
+
+ICMP
+	#dient der Übermittlung techn. Infos
+	#Teil des IP-Protokollstacks
+
+IP
+	#definiert die Datagramm-Struktur
+	#bewegt die Daten zwischen Transportschicht und Netzzugriffsschicht
+	#routet datagramme
+	#teilt den Datenstrom und fügt ihn wieder zusammen
+
+TCP
+	Verbindungsorientierter und Fehlerkorrektur Mechanismus
+
+UDP
+	agiert ohne fehlerprotokolle
+
+HTTP  HTTPS
+	webserverprotokoll
+
+FTP
+	Dateiübertragungsprotokoll

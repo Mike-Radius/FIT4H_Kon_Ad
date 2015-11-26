@@ -1,5 +1,5 @@
 ls -l /etc | less
-	durch das | Zeichen wird das E rgebnis (Die Ausgabe) des Befehls ls ... weitergeleitet in den Befehl less.
+	durch das | Zeichen wird das Ergebnis (Die Ausgabe) des Befehls ls ... weitergeleitet in den Befehl less.
 	Dadurch kann ich eine Seitenweise Anzeigbbe der Dateien und Ordner erzwingen.
 
 >
